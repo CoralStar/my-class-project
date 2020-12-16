@@ -1,107 +1,47 @@
-@charset "UTF-8";
-/* CSS Document */
-
-html, body {
-  margin: 0px;
+html {
+    height: 100%;
 }
 
-.clear {
-  clear: both;
+* {
+    box-sizing: border-box;
 }
-
-#wrapper {
-  width: 100%;
-  max-width: 960px;
-  margin: auto;
-}
-
-
-/*---------- HEADER ----------*/
-
-header {
-  height: 300px;
-  width: 100%;
-  background: #e3e3e3;
-}
-
-
-/*---------- CONTENT AREA ----------*/
-
-.col-3 {
-  width: 100%;
-  height: 320px;
-  float: left;
-}
-
-#column-1 {
-  background: #33fff3;
-}
-
-#column-2 {
-  background: #ff9a84;
-}
-
-#column-3 {
-  background: #84ffdc;
-}
-
-
-/*---------- FOOTER ----------*/
-
-footer {
-  width: 100%;
-  height: 30px;
-  background: #e3e3e3;
-}
-
-
-/*---------- TABLET ----------*/
-/* Change the background colors below */
-
-@media (min-width: 768px) {
-  header {
-    background-color: white;
-  }
-
-  #column-1 {
-    background-color: #1E90FF;
-  }
-
-  #column-2 {
-    background-color: #00BFFF;
-  }
-
-  #column-3 {
-    background-color: #00CED1;
-  }
-
-  footer {
-    background-color: lightblue;
-  }
+body {
+    background-color: mistyrose;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
 
 }
 
+.greeting {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #444;
+    padding: 2em;
+    box-shadow: 2px 1px 1px maroon;
+}
 
-/*---------- Desktops ----------*/
-@media (min-width: 1200px) {
-  header {
-    background-color: lightblue;
-  }
+.greeting h1 {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 1.75em;
+}
 
-  #column-1 {
-    background-color: #00CED1;
-  }
+.greeting p {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
 
-  #column-2 {
-    background-color: #00BFFF;
-  }
+.highlight {
+    color: maroon;
+}
 
-  #column-3 {
-    background-color: #1E90FF;
-  }
-
-  footer {
-    background-color: white;
-  }
-
+@media screen and (min-width: 760px) {
+    .greeting {
+        font-size: 1.5em;
+    }
 }
